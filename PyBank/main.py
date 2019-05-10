@@ -77,7 +77,6 @@ with open(file_to_analyze) as profit_loss_data:
     print("Greatest Increase: " + str(greatest_increase[0]) + " ($" +  str(greatest_increase[1]) + ")") 
     print("Greatest Decrease: " + str(greatest_decrease[0]) + " ($" +  str(greatest_decrease[1]) + ")")   
 
-
 # Output Files
 with open(file_to_output, "w") as txt_file:
     txt_file.write("Total Months: " + str(total_months))
