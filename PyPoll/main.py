@@ -1,18 +1,12 @@
 
 
  # The total number of votes cast
-
  # complete list of candidates who received votes
-
  # The percentage of votes each candidate won
-
  # The total number of votes each candidate won
-
  # The winner of the election based on popular vote
-
  
 # Dependencies
-
 import csv
 from collections import OrderedDict
 from operator import itemgetter
@@ -36,21 +30,12 @@ with open(file_to_load) as election_data:
         total_candidates = row["Candidate"]        
 
         if row["Candidate"] not in candidate_options:
-            
             candidate_options.append(row["Candidate"])
-
-            candidate_votes[row["Candidate"]] = 1
-            
+            candidate_votes[row["Candidate"]] = 1        
         else:
             candidate_votes[row["Candidate"]] = candidate_votes[row["Candidate"]] + 1
 
-#----------------------------------------------------------------------------------------
-    # Determine the Winner:
-    #if (votes > winner_votes[2]):
-     #   greatest_increase[1] = revenue_change
-      #  greatest_increase[0] = row["Candidate"]
-#----------------------------------------------------------------------------------------
-    
+   
     print()
     print()
     print()
